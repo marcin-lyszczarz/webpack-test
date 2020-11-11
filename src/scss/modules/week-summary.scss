@@ -1,0 +1,38 @@
+.week-summary {
+    padding: 16px;
+    border: 1px black solid;
+    margin-bottom: 15px;
+    &__title {
+      color: rgb(255, 255, 255);
+      font-weight: 400;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 16px;
+        background: #b721ff;
+        border-radius: 50%;
+      }
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-left: 16px;
+        background: #b721ff;
+        border-radius: 50%;
+      }
+    }
+    &__description {
+      color: rgb(0, 0, 0);
+    }
+    &:hover {
+      background: rgba(
+        255,
+        255,
+        255,
+        0.459
+      );
+    }
+  }

@@ -145,9 +145,240 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
-  </body>
+    <header class="header">
+        <button class="hamburger hamburger--js">X</button>
+        <nav class="navigation navigation--js">
+            <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">Nauka HTML'a</a>
+            <a class="navigation__link" href="nauka-css.html">Nauka CSS'a</a>
+            <a class="navigation__link" href="nauka-js.html">Nauka JS</a>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <header class='main__header' id="top">
+            <h1 class="main-heading main-heading--js">Marcin Łyszczarz - domowa robiona w ramach szkolenie WTF
+            </h1>
+            <p>Od początku dnia minęło: <span class="time--js"></span></p>
+        </header>
+
+        <section class="about">
+            <h2 class="about__heading">Kim jestem ?</h2>
+            <img class='about__picture' src="../assets/img/portret.jpg" alt="Portet brodatego">
+            <p class="about__description">Na codzień akustyk w Promost. Opracowuję Raporty ooś. Początkujący prgramista
+                frontendowy. Biorę udział w
+                szkolenio <a class='about__link' href="https://cotenfrontend.pl/">WTF</a> <br />
+                Ponadto interesuję się motoryzacją oraz sportem a zwłaszcza piłką nożną. Od czasu do czasu sam kopię. <a
+                    class='about__link' href="#notatki">Przejdź do notatek</a></p>
+        </section>
+
+        <section class='notes' id="notatki">
+            <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
+            <div class="grid">
+                <article class="week-summary">
+                    <h3 class="week-summary__title"> Jak stworzyć HTML-a?</h3>
+                    <p class="week-summary__description">Tworzenie zgodnie ze standardem HTML-a to sztuka, któą do
+                        perfekcji
+                        opanowało niewielu. Jeśli chcesz
+                        stać się częścią tej grupy, musisz wykazać się otwartą głową i duża ilością wolnego czasu..</p>
+                    <section>
+                        <h4>
+                            Lista fajnych znaczników
+                        </h4>
+                        <ul class="list">
+                            <li class="list__item">UL</li>
+                            <li class="list__item">OL</li>
+                            <li class="list__item">SECTION
+                                <ol>
+                                    <li>Analiza teści</li>
+                                    <li>Podział na sekcje</li>
+                                    <li>Stwórz pierwszą wersję kodu</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <dl>
+                            <dt>div</dt>
+                            <dd>Opis mojego diva</dd>
+                        </dl>
+                        <dl>
+                            <dt>article</dt>
+                            <dd>Opis mojego artykułu</dd>
+                        </dl>
+                    </section>
+                    <section>
+                        <h4>
+                            Kroki do zrobienia dobrego HTML'a
+                        </h4>
+                        <ol>
+                            <li>Analiza teści</li>
+                            <li>Podział na sekcje</li>
+                            <li>Stwórz pierwszą wersję kodu</li>
+                        </ol>
+                    </section>
+                </article>
+
+                <article class="week-summary">
+                    <h3 class="week-summary__title"> Pisanie i podłączanie CSS z linka zewnętrznego</h3>
+                    <p class="week-summary__description">Aby nadać styl konieczne jest wybranie poprzez selektor
+                        elementu,
+                        który ma być stylowany
+                        Linki zewnętrzne stylów podpinamy poprzez znacznik link rel="stylesheet" href="" class="" <br />
+                        Nagłówki, artykuły, paragrafy ostylowane.
+                    </p>
+                </article>
+
+                <article class="week-summary">
+                    <h3 class="week-summary__title"> Pisanie i podłączanie CSS z linka zewnętrznego</h3>
+                    <p class="week-summary__description">Aby nadać styl konieczne jest wybranie poprzez selektor
+                        elementu,
+                        który ma być stylowany
+                        Linki zewnętrzne stylów podpinamy poprzez znacznik link rel="stylesheet" href="" class="" <br />
+                        Nagłówki, artykuły, paragrafy ostylowane.
+                    </p>
+                </article>
+                
+                <article class="week-summary">
+                    <h3 class="week-summary__title"> Pisanie i podłączanie CSS z linka zewnętrznego</h3>
+                    <p class="week-summary__description">Aby nadać styl konieczne jest wybranie poprzez selektor
+                        elementu,
+                        który ma być stylowany
+                        Linki zewnętrzne stylów podpinamy poprzez znacznik link rel="stylesheet" href="" class="" <br />
+                        Nagłówki, artykuły, paragrafy ostylowane.
+                    </p>
+                </article>
+
+                <article class="week-summary">
+                    <h3 class="week-summary__title"> Podstawy JS, BEM, stylowanie</h3>
+                    <p class="week-summary__description"> Poszło całkiem nieźle.
+                    </p>
+                </article>
+            </div>
+            <article class="week-summary">
+                <h3 class="week-summary__title"> Wstawianie tekstu poprzez javaScript</h3>
+                <p class="week-summary__description week-summary__description--js">
+                </p>
+            </article>
+            <article class="week-summary">
+                <h3 class="week-summary__title"> Fromularze</h3>
+                <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+                    <p>
+                        <label for="firstName">Your name:</label>
+                        <input class="form__item" type="text" id="firstName" name="firstName"
+                            placeholder="Please enter your name">
+
+                    </p>
+                    <p>
+                        <label>Your last name:
+                            <input class="form__item" type="text" id="lastName" name="lastName"
+                                placeholder="Please enter your last name">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Your favourite number:
+                            <input class="form__item" type="number" id="favouriteNumber" name="favouriteNumber"
+                                placeholder="Please enter your last name">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Your phone number:
+                            <input class="form__item" type="tel" id="phoneNumber" name="phoneNumber"
+                                placeholder="Please enter your phone number">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Your e-mail:
+                            <input class="form__item" type="email" id="email" name="email"
+                                placeholder="Please enter your e-mail">
+                        </label>
+                    </p>
+                    <p>
+                        <label>Password:
+                            <input class="form__item" type="password" id="password" name="password"
+                                placeholder="Please enter password">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="textarea"> Text me something:</label>
+                        <textarea class="form__item--textarea" id="textarea" name="textarea"></textarea>
+
+                    </p>
+                    <p>
+                        <label>Avatar:
+                            <input class="form__item" type="file" id="file" name="file">
+                        </label>
+                    </p>
+                    <p>
+                        <label for="band">Pick one band:</label>
+                        <select id="band" onchange="getSelectBand()">
+                            <option value="band_1">Metallica</option>
+                            <option value="band_2">Nirvana</option>
+                            <option value="band_3">U2</option>
+                        </select>
+
+                    </p>
+                    <p>
+                        <label>Range:
+                            <input class="form__item range--js" type="range" id="range" name="range" min="0" max="100"
+                                step="20">
+                        </label>
+                    </p>
+
+                    <fieldset class="form__item">
+                        <legend>Address</legend>
+                        <p>
+                            <label>
+                                Street name
+                                <input class="form__item--adress" type="text" id="streetName"
+                                    placeholder="Please enter your street name" name="streetName">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                City
+                                <input class="form__item--adress" type="text" id="city"
+                                    placeholder="Please enter your city" name="city">
+                            </label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset class="form__item">
+                        <legend>Favourite car model</legend>
+                        <p>
+                            <label><input name="carModel" type="radio" value="audi"> Audi</label>
+                        </p>
+                        <p>
+                            <label><input name="carModel" type="radio" value="mercedes"> Mercedes</label>
+                        </p>
+                        <p>
+                            <label><input name="carModel" type="radio" value="bmw"> BMW</label>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <label><input name="agreement" type="checkbox"> I agree</label>
+                    </p>
+                    <p>
+                        <input name="submit" type="submit" value="Send">
+                    </p>
+
+
+                </form>
+            </article>
+            <article class="week-summary">
+                <h3 class="week-summary__title"> JavaScript: EVENTY</h3>
+                <p class="week-summary__description week-summary__changeText">Ten tekst się zmieni po kliknięciu w
+                    przycisk</p>
+                <button class="action--js">Zmień tekst</button>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        Strona domowa Marcina Łyszczarza, wszystkie treści są efektem nauki WTF: Co ten frontend. <a
+            class="footer__link" href="#top">Przejdź
+            do góry strony</a>
+    </footer>
+
+</body>
 </html>
